@@ -3,7 +3,7 @@
 # 0-9 numeric digits
 # use of . or _ 
 # use of @ once 
-# . 2nd or 3rd position from last (eg - .com or .in )
+# . 2nd or 3rd position from last (eg - .com or .in, .org )
 
 email = input("Enter your email address: ")
 space = 0
@@ -26,7 +26,7 @@ if len(email) >= 6:                                                     #1: Leng
                         continue
                     else:
                         wrongly_inputed = 1                          
-                if space == 1 or upper == 1 or wrongly_inputed == 1:
+                if space == 1 or upper == 1 or wrongly_inputed == 1:            #if spaces, upper case letter, or some other special symbol found in the user input then, it will throw the error no.5
                     print("Error 5: Invalid Email Address because there should neither contain any upper case letter nor the special symbols nor any spaces in between.")
                 else:
                     print("Correct Email Address")
